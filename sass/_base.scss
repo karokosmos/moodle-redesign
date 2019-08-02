@@ -1,0 +1,29 @@
+// VARIABLES
+$color-grey-light: #E9E9E9;
+$color-grey-dark: #3A4548;
+$color-primary: #51C7D6;
+
+$font-primary: 'Open Sans', sans-serif;
+
+@mixin shadow {
+  box-shadow: 1px 1px 5px $color-grey-light;
+}
+
+// BASE
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-grey-dark;
+}
