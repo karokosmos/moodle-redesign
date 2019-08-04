@@ -1,9 +1,11 @@
 // HEADER
 .header {
+    grid-column: 1 / span 2;
+
     display: grid;
     grid-template-columns: minmax(10rem, 1fr) minmax(20rem, 50rem) 7rem 10rem;
     align-items: center;
-    padding: 1rem 5rem;
+    padding: 0 5rem;
     @include shadow;
   }
   

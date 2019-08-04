@@ -1,7 +1,7 @@
 // VARIABLES
 $color-grey-light: #E9E9E9;
 $color-grey-dark: #3A4548;
-$color-primary: #51C7D6;
+$color-primary: #51C7D6; //#EAB1EF;
 
 $font-primary: 'Open Sans', sans-serif;
 
@@ -26,4 +26,9 @@ html {
 body {
   font-family: $font-primary;
   color: $color-grey-dark;
+
+  // The overall grid layout
+  display: grid;
+  grid-template-columns: 22rem 1fr;
+  grid-template-rows: 6.5rem 1fr;
 }

@@ -11,13 +11,17 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #3A4548; }
+  color: #3A4548;
+  display: grid;
+  grid-template-columns: 22rem 1fr;
+  grid-template-rows: 6.5rem 1fr; }
 
 .header {
+  grid-column: 1 / span 2;
   display: grid;
   grid-template-columns: minmax(10rem, 1fr) minmax(20rem, 50rem) 7rem 10rem;
   align-items: center;
-  padding: 1rem 5rem;
+  padding: 0 5rem;
   box-shadow: 1px 1px 5px #E9E9E9; }
 
 .logo {
@@ -86,3 +90,9 @@ body {
     height: 1.5rem;
     margin-left: -1rem;
     z-index: 10; }
+
+.nav {
+  background-color: #51C7D6;
+  height: calc(100vh - 6.5rem); }
+  .nav__link {
+    color: #fff; }
