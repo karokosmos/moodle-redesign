@@ -93,7 +93,9 @@ body {
 
 .nav {
   background-color: #51C7D6;
-  height: calc(100vh - 6.5rem); }
+  height: calc(100vh - 6.5rem);
+  position: relative;
+  transition: all .3s ease-in-out; }
   .nav__list {
     list-style-type: none;
     padding: 5rem 0 0 5rem; }
@@ -111,3 +113,26 @@ body {
     width: 1.7rem;
     margin-bottom: -3px;
     margin-right: 5px; }
+  .nav__toggle-btn {
+    background: #51C7D6;
+    border: none;
+    color: #fff;
+    position: absolute;
+    right: -3.3rem;
+    top: 0;
+    cursor: pointer;
+    outline: none;
+    border-bottom-right-radius: 2px;
+    opacity: 0.8; }
+  .nav__toggle-btn:hover {
+    opacity: 0.9; }
+  .nav__toggle-icon {
+    padding: 5px;
+    width: 3.5rem;
+    transition: all .3s ease-in-out; }
+
+.is-hidden {
+  transform: translateX(-22rem); }
+
+.rotate-icon {
+  transform: rotate(180deg); }
