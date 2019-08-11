@@ -1,12 +1,14 @@
 .nav {
   background-color: $color-primary;
   height: calc(100vh - 6.5rem); // Browser height - header height
+  width: 22rem;
   position: relative;
   transition: all .3s ease-in-out;
 
   &__list {
     list-style-type: none;
     padding: 5rem 0 0 5rem;
+    transition: opacity .8s ease-in-out;
   }
 
   &__item {
@@ -35,13 +37,13 @@
     background: $color-primary;
     border: none;
     color: #fff;
-    position: absolute;
-    right: -3.3rem;
-    top: 0;
     cursor: pointer;
     outline: none;
     border-bottom-right-radius: 2px;
     opacity: 0.8;
+    position: absolute;
+    top: 0;
+    right: -3.3rem;
   }
 
   &__toggle-btn:hover {
@@ -56,8 +58,13 @@
 }
 
 // JS: Class to hide/show nav on toggle
-.is-hidden {
+.nav-is-hidden.nav {
+  width: 0;
+}
+
+.nav-is-hidden .nav__list {
   transform: translateX(-22rem);
+  opacity: 0;
 }
 
 // JS: Rotate icon on toggle

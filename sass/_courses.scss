@@ -1,0 +1,20 @@
+.courses {
+  /*
+  display: grid;
+  grid-template-columns: 1fr 80vw 1fr;
+  grid-template-rows: auto auto;
+  */
+  padding: 6rem 12rem;
+  // animation when the nav is hidden/expanded
+  transition: all .3s ease-in-out;
+
+  /*
+  &__title {
+    grid-column: 2 / 3;
+  }
+
+  &__cards {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  */
+}
