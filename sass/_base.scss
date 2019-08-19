@@ -28,6 +28,7 @@ html {
 body {
   font-family: $font-primary;
   color: $color-grey-dark;
+  overflow: hidden; // making the page unscrollable (so the header and nav stay fixed)
 
   // The overall grid layout
   display: grid;

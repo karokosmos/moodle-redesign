@@ -1,20 +1,22 @@
 .courses {
-  /*
-  display: grid;
-  grid-template-columns: 1fr 80vw 1fr;
-  grid-template-rows: auto auto;
-  */
-  padding: 6rem 12rem;
-  // animation when the nav is hidden/expanded
+  //background-color: lightblue;
+  padding: 6rem 8rem;
+  height: calc(100vh - 6.5rem);
+  overflow-y: auto; // adding scroll bar for the courses
   transition: all .3s ease-in-out;
 
-  /*
   &__title {
-    grid-column: 2 / 3;
+    font-size: 2.6rem;
   }
 
   &__cards {
-    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-gap: 2rem;
   }
-  */
+
+  &__card {
+    background-color: grey;
+    width: 30rem;
+    height: 40rem;
+  }
 }
