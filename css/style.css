@@ -26,11 +26,35 @@ body {
     font-size: 2.6rem; }
   .courses__cards {
     display: grid;
-    grid-gap: 2rem; }
-  .courses__card {
-    background-color: grey;
-    width: 30rem;
-    height: 40rem; }
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-rows: auto;
+    padding: 3rem 0; }
+
+.card {
+  height: 25rem;
+  border: 2px solid #E9E9E9; }
+  .card__img {
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+    /*
+    &--1 {
+      background-image: url('../img/desk.jpg');
+    }
+
+    &--2 {
+      background-image: url('../img/math.jpg');
+    }
+
+    &--3 {
+      background-image: url('../img/code.jpg');
+    }
+
+    &--4 {
+      background-image: url('../img/writing.jpg');
+    }
+    */ }
 
 .header {
   grid-column: 1 / span 2;
@@ -113,7 +137,7 @@ body {
   height: calc(100vh - 6.5rem);
   width: 22rem;
   position: relative;
-  transition: all .3s ease-in-out; }
+  transition: width .3s ease-in-out; }
   .nav__list {
     list-style-type: none;
     padding: 5rem 0 0 5rem;
@@ -148,7 +172,7 @@ body {
   .nav__toggle-icon {
     padding: 5px;
     width: 3.5rem;
-    transition: all .3s ease-in-out; }
+    transition: transform .3s ease-in-out; }
 
 .nav-is-hidden.nav {
   width: 0; }

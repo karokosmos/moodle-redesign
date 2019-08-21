@@ -1,7 +1,7 @@
 .courses {
   //background-color: lightblue;
   padding: 6rem 8rem;
-  height: calc(100vh - 6.5rem);
+  height: calc(100vh - 6.5rem); // height for the scrollbar to work
   overflow-y: auto; // adding scroll bar for the courses
   transition: all .3s ease-in-out;
 
@@ -11,12 +11,38 @@
 
   &__cards {
     display: grid;
-    grid-gap: 2rem;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-rows: auto;
+    padding: 3rem 0;
   }
+}
 
-  &__card {
-    background-color: grey;
-    width: 30rem;
-    height: 40rem;
+.card {
+  height: 25rem;
+  border: 2px solid $color-grey-light;
+
+  &__img {
+    height: 15rem;
+    background-size: cover;
+    background-position: center;
+
+    /*
+    &--1 {
+      background-image: url('../img/desk.jpg');
+    }
+
+    &--2 {
+      background-image: url('../img/math.jpg');
+    }
+
+    &--3 {
+      background-image: url('../img/code.jpg');
+    }
+
+    &--4 {
+      background-image: url('../img/writing.jpg');
+    }
+    */
   }
 }
