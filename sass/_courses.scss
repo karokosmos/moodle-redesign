@@ -19,15 +19,31 @@
 }
 
 .card {
-  height: 25rem;
+  height: 20rem;
   border: 2px solid $color-grey-light;
+  overflow: hidden;
+  //@include shadow;
 
+  border-radius: 5px;
+  //background-color: #efefef;//$color-grey-light;
+
+  transition: all .2s ease-out;
+
+  &__content {
+    padding: 2.5rem;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  /*
   &__img {
     height: 15rem;
     background-size: cover;
     background-position: center;
 
-    /*
     &--1 {
       background-image: url('../img/desk.jpg');
     }
@@ -43,6 +59,11 @@
     &--4 {
       background-image: url('../img/writing.jpg');
     }
-    */
   }
+  */
+}
+
+.card:hover {
+  @include shadow;
+  transform: translateY(-3px);
 }

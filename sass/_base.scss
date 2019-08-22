@@ -1,5 +1,5 @@
 // VARIABLES
-$color-grey-light: #E9E9E9;
+$color-grey-light: hsl(0, 0%, 95%);//#E9E9E9;
 $color-grey-dark: #3A4548;
 
 // Needs to be set with root to be changed with Javascript? For the color widget
@@ -8,7 +8,7 @@ $color-primary: #51C7D6; //#EAB1EF;
 $font-primary: 'Open Sans', sans-serif;
 
 @mixin shadow {
-  box-shadow: 1px 1px 5px $color-grey-light;
+  box-shadow: 0px 2px 10px $color-grey-light;
 }
 
 // BASE
