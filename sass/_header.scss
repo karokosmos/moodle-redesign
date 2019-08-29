@@ -36,7 +36,7 @@
   
     &__input:focus {
       outline: none;
-      @include shadow;
+      border-color: $color-primary;
     }
   
     &__input::placeholder {
