@@ -36,7 +36,7 @@
   
     &__input:focus {
       outline: none;
-      border-color: $color-primary;
+      @include shadow;
     }
   
     &__input::placeholder {
@@ -96,7 +96,7 @@
     }
   
     &__count {
-      background-color: $color-primary;
+      background-color: $color-blue;
       color: #fff;
       text-align: center;
       border-radius: 5rem;
