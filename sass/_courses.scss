@@ -58,6 +58,7 @@
 
 
   &__count {
+    background-color: $color-secondary;
     position: absolute;
     color: #fff;
     text-align: center;
@@ -67,19 +68,6 @@
     right: 6px;
     top: -5px;
     z-index: 10;
-
-    &--notifications {
-      background-color: $color-green;
-      //margin-left: -2.1rem;
-    }
-
-    &--messages {
-      background-color: $color-blue;
-    }
-
-    &--deadline {
-      background-color: $color-purple;
-    }
   }
 
   &--add {
