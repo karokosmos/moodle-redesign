@@ -1,5 +1,4 @@
 .courses {
-  //background-color: lightblue;
   padding: 6rem 8rem;
   height: calc(100vh - 6.5rem); // height for the scrollbar to work
   overflow-y: auto; // adding scroll bar for the courses
@@ -20,11 +19,7 @@
 
 .card {
   border: 2px solid $color-grey-light;
-  //@include shadow;
-
   border-radius: 5px;
-  //background-color: #efefef;//$color-grey-light;
-
   transition: all .2s ease-out;
 
   &__content {
